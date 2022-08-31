@@ -1,1 +1,3 @@
-window.onload = () => alert("Hello World")
+window.addEventListener("load", ()=>{
+    console.log("Hello")
+})
