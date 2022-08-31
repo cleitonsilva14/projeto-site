@@ -1,3 +1,1 @@
-window.onload(()=>{
-    alert("Hello World")
-})
+window.onload = () => alert("Hello World")
