@@ -7,7 +7,10 @@ window.onload = function(){
     const spanGreen = document.querySelector('span#spanGreen')
     const spanBlue = document.querySelector('span#spanBlue')
 
+    const hex = document.querySelector('p#colorHex')
     const container = document.querySelector('div#container')
+
+
 
     inputRed.addEventListener('input', function(){
         //liveUpdate(this.value, this.name)
@@ -22,6 +25,11 @@ window.onload = function(){
         liveUpdate()
     })
 
+    function hexColor(red, green, blue){
+        let h = "#";
+        
+    }
+
     function liveUpdate(){
         let r = inputRed.value
         let g = inputGreen.value
@@ -30,7 +38,7 @@ window.onload = function(){
         spanRed.innerText = r
         spanGreen.innerText = g
         spanBlue.innerText = b
-        
+         
         container.style.backgroundColor = `rgb(${r},${g},${b})`
 
     }
